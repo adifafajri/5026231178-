@@ -20,3 +20,49 @@ Route::get('blog', function () {
 
 Route::get('/hello', [Coba::class, 'helloWorld']);
 Route::get('/hello', 'App\Http\Controllers\Coba@helloWolrd');
+
+// Pertemuan 1
+Route::get('/pertemuan1', function () {
+    return view('pertemuan1');
+});
+
+// Latihan Pertemuan 1
+Route::get('/latihanpertemuan1', function () {
+    return view('latihanpertemuan1');
+});
+
+// Pertemuan 3 Bootstrap
+Route::get('/bootstrap2pertemuan3', function () {
+    return view('bootstrap2pertemuan3');
+});
+
+// Pertemuan 4 Latihan Bootstrap
+Route::get('/bootstraplatihanpertemuan4', function () {
+    return view('bootstraplatihanpertemuan4');
+});
+
+// Pertemuan 5 Bootstrap Linktre
+Route::get('/bootstraplinktreepertemuan5', function () {
+    return view('bootstraplinktreepertemuan5');
+});
+
+
+// Pertemuan 7 Latihan Bootstrap
+Route::get('/js1pertemuan7', function () {
+    return view('js1pertemuan7');
+});
+
+// Pertemuan 7 Latihan Bootstrap
+Route::get('/js2pertemuan7', function () {
+    return view('js2pertemuan7');
+});
+
+// Pertemuan 8 Danantara
+Route::get('/danantarapertemuan8', function () {
+    return view('danantarapertemuan8');
+});
+
+// Pertemuan 9 ETS
+Route::get('/etspertemuan9', function () {
+    return view('etspertemuan9');
+});
