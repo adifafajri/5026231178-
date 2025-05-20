@@ -152,7 +152,7 @@
         </div>
 
                 <div class="d-flex justify-content-center mt-4 hover-zoom">
-            <a href="{{ url('etspertemuan9') }}" style="text-decoration: none; width: 600px;">
+            <a href="https://adifafajri.github.io" style="text-decoration: none; width: 600px;">
                 <div
                     style="background-color: white; border-radius: 8px; padding: 20px 50px; display: flex; justify-content: center; align-items: center;">
                     <p class="font-weight-bold m-0 text-center" style="font-size: smaller; color: black;">
