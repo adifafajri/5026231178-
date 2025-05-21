@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Coba;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\BlogController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -66,3 +69,31 @@ Route::get('/danantarapertemuan8', function () {
 Route::get('/etspertemuan9', function () {
     return view('etspertemuan9');
 });
+
+
+Route::get('dosen',
+    [Coba::class, 'index']
+);
+
+Route::get('/pegawai/{nama}',
+    [PegawaiController::class, 'index']
+);
+
+// Halaman isian formulir
+Route::get('/formulir',
+    [PegawaiController::class, 'formulir']
+);
+Route::post('/formulir/proses',
+    [PegawaiController::class, 'proses']
+);
+
+Route::get('/blok',
+    [BlogController::class, 'home']
+);
+Route::get('/blok/tentang',
+    [BlogController::class, 'tentang']
+);
+
+Route::get('/blok/kontak',
+    [BlogController::class, 'kontak']
+);
